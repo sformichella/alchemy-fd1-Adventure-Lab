@@ -1,3 +1,5 @@
+import data from './data.js'
+
 export function findById(array, idString) {
     for (const element of array) {
         if (element.id === idString){
@@ -8,6 +10,8 @@ export function findById(array, idString) {
 }
 
 export function createChoicesPage(pageData) {
+
+    // Create Basic elements
     const main = document.createElement('main');
         main.style.backgroundImage = pageData.image;
 
@@ -19,7 +23,7 @@ export function createChoicesPage(pageData) {
 
     const form = document.createElement('form');
 
-
+    // Fill form with that pages choices
     const choices = pageData.selections;
     choices.forEach(element => {
         const label = document.createElement('label');
@@ -39,6 +43,28 @@ export function createChoicesPage(pageData) {
 
         form.append(label);
     });
+
+    const submitButton = document.createElement('button');
+        submitButton.textContent = 'Submit';
+
+    form.append(submitButton);
+
+    // Form Event Listener
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const selected = document.querySelector(':checked');
+        // Data for the selected choice
+        const selectedData = findById(data, selected.value);
+
+        // If that data has choices of its own
+        if (selectedData.selections) {
+            window.location.href = '../choices/?id=' + selectedData.id;
+            console.log('new page');
+        } else {
+            updateResources()
+        }
+    })
 
     main.append(title, desc, form);
 

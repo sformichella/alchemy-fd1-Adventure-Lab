@@ -6,5 +6,5 @@ observationBuilding.addEventListener('click', () => {
 })
 
 missionsBuilding.addEventListener('click', () => {
-    window.location.href = '../choices/?id=missions';
+    window.location.href = '../choices/' + '?id=missions';
 })
