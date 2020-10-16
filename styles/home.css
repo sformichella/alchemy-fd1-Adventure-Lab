@@ -14,8 +14,10 @@ main {
 }
 
 main section {
+    position: relative;
+    
     width: 700px;
-    height: 700px;
+    height: 900px;
 }
 
 div {
