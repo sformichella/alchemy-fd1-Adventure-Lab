@@ -1,0 +1,192 @@
+body {
+    min-width: 1657px;
+    min-height: 1045px;
+}
+
+main {
+    background-image: url('../assets/space-center.png');
+    width: 1657px;
+    height: 1045px;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+
+/* TOP SECTION */
+
+
+.top-part {
+    position: relative;
+
+    height: 291px;
+    width: 100%;
+}
+
+.mission-container {
+    position: absolute;
+    left: 725px;
+    top: 62px;
+
+    width: 240px;
+    height: 265px;
+}
+
+.mission-container:hover {
+    filter: drop-shadow(0px 0px 10px yellow);
+    cursor: pointer;
+}
+
+.missions-building {
+    position: absolute;
+
+    width: 250px;
+    height: 251px;
+
+    clip-path: polygon(
+        0 50%,
+        30% 0,
+        100% 0,
+        100% 100%,
+        30% 100%
+    );
+    shape-outside: polygon(
+        0 50%,
+        33% 0,
+        100% 0,
+        100% 100%,
+        33% 100%
+    );
+
+    transform: rotate(12.2deg);
+
+    opacity: 0.2;
+    background-color: white;
+}
+
+
+/* MIDDLE SECTION  */
+
+
+.middle-part {
+    position: relative;
+
+    height: 337px;
+    width: 100%;
+}
+
+.research-building {
+    position: absolute;
+
+    width: 311px;
+    height: 272px;
+
+    clip-path: polygon(
+        0 50%,
+        26% 0,
+        93% 0,
+        100% 14%,
+        91% 31%,
+        100% 49%,
+        74% 100%,
+        23% 100%
+    );
+
+    background-color: white;
+    opacity: 0.2;
+
+    transform: rotate(12.4deg);
+}
+
+.research-container {
+    position: absolute;
+    left: 352px;
+    top: 22px;
+
+    width: 311px;
+    height: 272px;
+}
+
+.research-container:hover {
+    filter: drop-shadow(0px 0px 10px yellow);
+    cursor: pointer;
+}
+
+.vehicle-assembly-building {
+    position: absolute;
+
+    width: 311px;
+    height: 272px;
+
+    clip-path: polygon(
+        0 50%,
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%
+    );
+
+    background-color: white;
+    opacity: 0.2;
+
+    transform: rotate(12.4deg);
+}
+
+.vab-container {
+    position: absolute;
+    left: 664px;
+    top: 40px;
+
+    width: 311px;
+    height: 272px;
+}
+
+.vab-container:hover {
+    filter: drop-shadow(0px 0px 10px yellow);
+    cursor: pointer;
+}
+
+
+/* BOTTOM SECTION */
+
+.bottom-part {
+    position: relative;
+
+    height: 309px;
+    width: 100%;
+}
+
+.observation-building {
+    position: absolute;
+
+    width: 297px;
+    height: 262px;
+
+    clip-path: polygon(
+        0 79%,
+        39% 0,
+        59% 0,
+        100% 79%,
+        90% 100%,
+        10% 100%
+    );
+
+    background-color: white;
+    opacity: 0.2;
+
+    transform: rotate(12.4deg);
+}
+
+.observation-container {
+    position: absolute;
+    left: 575px;
+    top: 20px;
+
+    width: 311px;
+    height: 264px;
+}
+
+.observation-container:hover {
+    filter: drop-shadow(0px 0px 10px yellow);
+    cursor: pointer;
+}
