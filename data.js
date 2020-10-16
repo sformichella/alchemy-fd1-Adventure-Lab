@@ -44,7 +44,7 @@ const oceanFlyover = {
             experience: 30,
             fuel: 20,
             money: 100,
-            description: "Try to land back on.. well land. It's harder than a splashdown and costs more fuel, but it might be cool."
+            description: "Try to land back on.. well land. It's harder than a splashdown and costs more fuel, but it will be cool."
         }
     ],
     image: 'blah',
