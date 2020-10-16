@@ -1,6 +1,6 @@
 body {
     min-width: 1657px;
-    min-height: 1045px;
+    min-height: 1200px;
 
     background-color: black;
 }
@@ -9,8 +9,8 @@ main {
     background-image: url('../assets/space-center.png');
     width: 1657px;
     height: 1045px;
-    overflow: auto;
-    overflow-y: auto;
+    /* overflow: auto;
+    overflow-y: auto; */
 }
 
 

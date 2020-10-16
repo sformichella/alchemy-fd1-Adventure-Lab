@@ -16,3 +16,44 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
+.user-info {
+    height: 150px;
+    width: 960px;
+    margin: 10px;
+
+
+    border: double 1px white;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.user-info .spacecraft-div {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info .spacecraft-div p {
+    width: 180px;
+
+    margin: 2px;
+    text-align: left;
+}
+
+.user-info .spacecraft-div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-info img {
+    height: 120px;
+}

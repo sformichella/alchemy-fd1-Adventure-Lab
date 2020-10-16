@@ -9,6 +9,8 @@ export function findById(array, idString) {
     return null;
 }
 
+
+// Makes a main element for any data elements we have in the data array
 export function createChoicesPage(pageData) {
 
     // Create Basic elements
@@ -69,4 +71,52 @@ export function createChoicesPage(pageData) {
     main.append(title, desc, form);
 
     return main
+}
+
+
+// Makes user info section
+export function createUserInfo(userInfo) {
+
+    const userInfo = document.createElement('section');
+    userInfo.classList.add('user-info');
+    
+    // Basic Data
+    const userName = document.createElement('p');
+        userName.textContent = `Username: ${userInfo.name}`;
+
+    const userClass = document.createElement('p');
+        userClass.textContent = userInfo.class;
+
+    const experience = document.createElement('p');
+        experience.textContent= `Experience: ${userInfo.experience}`;
+
+    const money = document.createElement('p');
+        money.textContent= `Money: ${userInfo.money}`;
+
+    const science = document.createElement('p');
+        science.textContent= `Science: ${userInfo.science}`;
+
+
+    // Spacecraft Section
+    const spacecraftSection = document.createElement('section');
+    
+        const spacecraftImage = document.createElement('img');
+
+        const spacecraftInfo = document.createElement('div');
+
+            const spacecraftName = document.createElement('p');
+            
+            const fuelLevel = document.createElement('p');
+
+            const fuelTank = document.createElement('p');
+
+            const scienceGear = document.createElement('p');
+
+        spacecraftInfo.append(spacecraftName, fuelLevel, fuelTank, scienceGear);
+
+    spacecraftSection.append(spacecraftImage, spacecraftInfo);
+
+    userInfo.append(userName, userClass, experience, money, science, spacecraftSection); 
+
+    return userInfo;
 }
