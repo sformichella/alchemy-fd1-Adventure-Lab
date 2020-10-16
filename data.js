@@ -1,3 +1,5 @@
+
+// Kerbin Missions
 const orbitalFlight = {
     id: 'kerbin-orbital-flight',
     title: 'Orbital Flight',
@@ -54,12 +56,25 @@ const oceanFlyover = {
     }
 }
 
-const kerbinMissions = [
-    orbitalFlight,
-    oceanFlyover
+const missionsPage = {
+    id: 'missions',
+    title: 'Missions',
+    selections: [
+        orbitalFlight,
+        oceanFlyover
+    ],
+    image: 'blah',
+    description: 'Here are the available missions.'
+}
+
+
+const data = [
+    missionsPage,
+    oceanFlyover,
+    orbitalFlight
 ]
 
-export default kerbinMissions;
+export default data;
 
 // const oceanFlyover = {
 //     id: ,

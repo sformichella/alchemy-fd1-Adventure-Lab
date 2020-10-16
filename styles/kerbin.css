@@ -47,8 +47,9 @@ main {
     clip-path: polygon(
         0 50%,
         30% 0,
-        100% 0,
-        100% 100%,
+        90% 0,
+        98% 90%,
+        92% 100%,
         30% 100%
     );
     shape-outside: polygon(

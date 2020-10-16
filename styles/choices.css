@@ -1,0 +1,16 @@
+body {
+    background-image: url('../assets/starry-night3.jpg');
+}
+
+main {
+    width: 960px;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+}
+
+form {
+    color: white;
+}
